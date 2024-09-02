@@ -1,0 +1,44 @@
+{
+  "version": 2, 
+  "name": "test",
+  "source_bucket": "mediaflower-stage-src",
+  "derived_bucket": "mediaflower-stage-var",
+  "images": [
+    {
+      "name": "some_image", 
+      "path": "some_images",
+      "image_variants": [
+        {
+          "name": "avatar",
+          "path": "avatars",
+          "imgproxy_params": "rs:fit:500:500",
+          "format": "webp"
+        }
+      ] 
+    },
+    {
+      "name": "illustration",
+      "path": "illustrations",
+      "image_variants": [
+        {
+          "name": "thumb",
+          "path": "thumb1x",
+          "imgproxy_params": "rs:fit:500:500",
+          "format": "webp"
+        },
+        {
+          "name": "preview",
+          "path": "preview1x",
+          "imgproxy_params": "rs:fit:100:100",
+          "format": "webp"
+        },
+        {
+          "name": "icon",
+          "path": "icons",
+          "imgproxy_params": "rs:fit:50:50",
+          "format": "webp"
+        }
+      ]
+    }
+  ]
+}
